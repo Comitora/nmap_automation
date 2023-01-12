@@ -6,9 +6,9 @@
 input_file=$1
 
 # Get the path of the input file
-path=$(dirname "$input_file")
+path=$(pwd)
 
-# Create a new file to store the cleaned URLs in the same path as the input file
+# Create a new file to store the cleaned URLs in the current directory
 cleaned_file="$path/cleaned_$(basename "$input_file")"
 
 # Remove "http://" and "https://" from the URLs
